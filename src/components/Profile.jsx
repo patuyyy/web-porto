@@ -3,7 +3,7 @@ import photoProfile from "../assets/poto.png"
 
 const Profile = () => {
     return (
-        <div className="bg-black text-white text-center py-16">
+        <div className="bg-krem1 text-black text-center py-16 mt-10" id="home">
             <img src={photoProfile} alt="" 
             className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
             transition-transform duration-300 hover:scale-105"/>
@@ -12,7 +12,7 @@ const Profile = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Raihan Muhammad Ihsan</span>
                 , Full-Stack Developer
             </h1>
-            <p className="mt-4 text-lg text-gray-300">
+            <p className="mt-4 text-lg text-black">
                 Student of Computer Engineering University of Indonesia
             </p>
             <div className="mt-8 space-x-4 ">

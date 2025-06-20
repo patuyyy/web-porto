@@ -35,7 +35,7 @@ const project = [
 ]
 const Project = () => {
     return (
-        <div className="bg-black text-white py-20 transition-all duration-500 ease-in-out" id='about'>
+        <div className="bg-black text-white py-20" id='about'>
             <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <h2 className="text-4xl font-bold text-center mb-12">My Project</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
