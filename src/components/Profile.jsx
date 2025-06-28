@@ -4,28 +4,31 @@ import photoProfile from "../assets/poto.png"
 const Profile = () => {
     return (
         <div className="bg-krem1 text-black text-center py-16 mt-10" id="home">
-            <img src={photoProfile} alt="" 
-            className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
+            <img src={photoProfile} alt=""
+                className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform
             transition-transform duration-300 hover:scale-105"/>
-            <h1 className="text-4xl font-bold ">
+            <h1 className="text-4xl font-bold px-5">
                 I'm {" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Raihan Muhammad Ihsan</span>
                 , Full-Stack Developer
             </h1>
-            <p className="mt-4 text-lg text-black">
+            <p className="mt-4 text-lg text-black px-5">
                 Student of Computer Engineering University of Indonesia
             </p>
             <div className="mt-8 space-x-4 ">
-                <button 
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden 
+                <button
+                    className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden 
                 md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-3 rounded-full">
                     Contact Me
                 </button>
-                <button 
-                className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white hidden 
+                <a href="https://drive.google.com/file/d/1DJkkVgg-93Zm-3k_ZWFVuzvpE5QG99Oi/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button
+                        className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white hidden 
                 md:inline transform transition-transform duration-300 hover:scale-105 px-4 py-3 rounded-full">
-                    Resume
-                </button>
+                        Resume
+                    </button>
+                </a>
+
             </div>
         </div>
     )

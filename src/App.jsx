@@ -5,6 +5,7 @@ import Profile from './components/Profile'
 import About from './components/About'
 import Project from './components/Project'
 import Footer from './components/Footer'
+import Professional from './components/Professional'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Profile />
         <About />
+        <Professional />
         <Project />
         <Footer />
       </div>
