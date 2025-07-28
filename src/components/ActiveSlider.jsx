@@ -42,8 +42,8 @@ const ActiveSlider = () => {
                             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${item.image})` }} />
                             <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50 duration-100" />
                             <div className="relative flex flex-col gap-3">
-                                <h3 className="text-sm font-roboto font-bold mb-2 md:text-2xl">{item.title}</h3>
-                                <p className="font-roboto text-sm md:text-base">
+                                <h3 className="text-xl font-roboto font-bold mb-2 md:text-2xl">{item.title}</h3>
+                                <p className="font-roboto text-sm md:text-base hidden md:block">
                                     {item.desc}
                                 </p>
                                 <div className="space-x-4 mt-4">

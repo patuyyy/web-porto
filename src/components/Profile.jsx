@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import photoProfile from "../assets/poto.png"
 
 const Profile = () => {
@@ -10,8 +11,21 @@ const Profile = () => {
             <h1 className="text-4xl font-bold px-5">
                 I'm {" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Raihan Muhammad Ihsan</span>
-                , Full-Stack Developer
+                , 
             </h1>
+            <TypeAnimation className="text-4xl font-bold px-5 justify-center"
+                    sequence={[
+                        // Teks yang sama, hanya jeda 1 detik di akhir
+                        'Full Stack Developer',
+                        2500,
+                        'Network Engineer',
+                        2500,
+                    ]}
+                    wrapper="span" // bisa juga 'div', 'h1', 'p', dll.
+                    speed={200} // Kecepatan mengetik
+                    style={{ fontSize: 'text-4xl', display: 'inline-block' }}
+                    repeat={Infinity} // Mengulang animasi tanpa batas
+                />
             <p className="mt-4 text-lg text-black px-5">
                 Student of Computer Engineering University of Indonesia
             </p>
